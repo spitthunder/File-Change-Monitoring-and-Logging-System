@@ -127,8 +127,8 @@ if __name__ == "__main__":
         # Ensure the backup_paths table exists
         create_backup_paths_table_if_not_exists(cursor)
         conn.commit()
-        directory_to_process = r'C:\Users\KIIT\OneDrive - kiit.ac.in\Desktop\New folder'
-        backup_directory = r'C:\Users\KIIT\OneDrive - kiit.ac.in\Desktop\backup_directory'
+        directory_to_process = r'Your/main/directory/path/that/has/files/to/check'
+        backup_directory = r'Your/backup/directory/path/where/backup/files/will/be/store'
         while True:
            process_directory(directory_to_process, backup_directory,cursor,conn)
            time.sleep(30)
