@@ -44,7 +44,7 @@ The project employs a two-table database schema:
 ### 1. `backup_paths` Table
 
 - Stores mappings between original files and their backup copies.
-- Ensures redundancy-free backups.
+  
 
 ### 2. `differences` Table
 
